@@ -1,0 +1,21 @@
+{
+  "name": "mermaid_validator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Mermaid diagram validation service for n8n",
+  "engines": {
+    "node": ">=18.x"
+  },
+  "dependencies": {
+    "@mermaid-js/mermaid-cli": "^11.9.0",
+    "express": "^5.1.0"
+  }
+}
