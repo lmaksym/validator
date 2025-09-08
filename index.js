@@ -72,7 +72,7 @@ app.post('/validate', async (req, res) => {
         try {
             // Attempt to parse the diagram
             await mermaid.parse(diagram);
-            
+            console.log(diagram);
             // If parse succeeds, diagram is valid
             res.json({
                 valid: true,
