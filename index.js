@@ -83,7 +83,7 @@ app.post('/validate', async (req, res) => {
         } catch (parseError) {
             // Parse failed - return error
             const errorMessage = parseError.message || parseError.toString();
-            
+            console.warn(`Error diagram: ${diagram}`)
             return res.status(400).json({
                 valid: false,
                 error: errorMessage,
